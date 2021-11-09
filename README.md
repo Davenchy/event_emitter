@@ -1,4 +1,4 @@
-# EventEmitter
+# TypedEventEmitter
 
 Simple package to emit and control events
 

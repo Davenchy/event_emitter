@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:event_emitter/event_emitter.dart';
+import 'package:typed_event_emitter/typed_event_emitter.dart';
 
 import 'server_event.dart';
 
-class Server extends EventEmitter<ServerEvent> {
+class Server extends TypedEventEmitter<ServerEvent> {
   final Set<String> _clients = {};
   bool _isActive = false;
 

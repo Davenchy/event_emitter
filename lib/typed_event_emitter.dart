@@ -3,7 +3,7 @@ import 'dart:async';
 typedef EventHandler<E> = void Function(E event);
 typedef HandlerCanceler = Future<void> Function();
 
-class EventEmitter<T> {
+class TypedEventEmitter<T> {
   final StreamController<T> _controller = StreamController.broadcast();
   final Set<StreamSubscription> _subscriptions = {};
   final Set<Completer> _completers = {};
